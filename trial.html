@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>real</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Sign up</h1>
+	<div id="inputStyle">
+    <label for="nameInput" class="1">name: </label>
+    <input id="nameInput" placeholder="name"> 
+    <br>
+    <label for="preferredUsernameInput" class="2">preferred username: </label>
+    <input id="preferredUsernameInput" placeholder="preferred username">
+    <br>
+    <label type="password"for="passwordInput" class="3">password: </label>
+    <input id="passwordInput" placeholder="password">
+    <br>
+    <label type="password" for="confirmPasswordInput" class="4">confirm password: </label>
+    <input id="confirmPasswordInput" placeholder="confirm password">
+
+    <br>
+    <label for="emailInput" class="5">email: </label>
+    <input id="emailInput" type="email" placeholder="abc@gmail.com"> 
+    <br>
+    <label for="adressInput" class="6">address: </label>
+    <input id="adressInput" placeholder="address"> 
+    <br>
+    <label for="descriptionInput" class="7">short description: </label>
+    <br>
+    <textarea rows="5" cols="25" id="descriptionInput"></textarea> 
+    <br>
+    <button onclick="confirm()">Confirm</button>
+    <button id="btnRefresh" type="button">reset</button>
+	</div>
+	<br>
+    
+
+
+</body>
+<script>
+    function confirm() {
+        var name = nameInput.value;
+        var preferredUsername = preferredUsernameInput.value;
+        const pass = passwordInput.value;
+        const confirmPass = confirmPasswordInput.value;
+        var email = emailInput.value;
+        var adress = adressInput.value;
+        var description = descriptionInput.value;
+		
+		
+		
+		
+		
+        if (confirmPass === pass) {
+            alert("Thank you for signing up!");
+        }
+		else {
+			alert("Please confirm password!");
+			return;
+		}
+
+
+    }
+</script>
+
+<style>
+	#inputStyle {
+        border: 5px;
+        border-style: solid;
+        border-color: black;
+        padding: 10px;
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        background-color: silver;
+        border-radius: 50px;
+        l
+        
+
+    }
+    * {
+        text-align: center;
+    }
+    .label {
+        text-align: left;
+    }
+</style>
+</html>
